@@ -19,7 +19,9 @@ r=1
 while e < len(a):
     for i,j in enumerate(a):
         if i != e:
-            r=r*a[i]
+            r*=a[i]
     b.append(r)
     r = 1
-    e=e+1
+    e+=1
+
+print(b)
