@@ -3,10 +3,10 @@ a = [3,2,1]
 outcome = []
 for i in range(len(a)):
     b=a.copy()
-    result = 1
+    r = 1
     del b[i]
     for j in b:
-        result = result * j
+        r*=j
     outcome.append(result)
     
     
@@ -19,9 +19,7 @@ r=1
 while e < len(a):
     for i,j in enumerate(a):
         if i != e:
-            r*=a[i]
+            r*=j
     b.append(r)
     r = 1
     e+=1
-
-print(b)
