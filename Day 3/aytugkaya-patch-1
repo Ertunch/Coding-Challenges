@@ -1,0 +1,11 @@
+def find_number(array):
+    #array.append(max(array)+1)
+    array.sort()
+    compare=np.arange(1,(max(array)+2))
+    #print(compare)
+    for number in compare:
+        if number not in array:
+            if number > 0:
+                return number
+        
+            
