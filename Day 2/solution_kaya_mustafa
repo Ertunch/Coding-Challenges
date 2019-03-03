@@ -1,0 +1,7 @@
+def products(liste1): 
+    swap=liste1
+    result=[]
+    for i in range (len(liste1)):
+        liste1=swap
+        result.append(np.product(liste1))
+    return result
