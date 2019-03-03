@@ -1,3 +1,5 @@
+"""This script loads 9 test cases for Day 3 challenge."""
+
 import numpy as np
 
 test_case_1 = [0,1,2,4]
@@ -15,5 +17,5 @@ test_case_7 = [0] * 16830000
 test_case_8 = list(range(-2**24,3)) \
             + list(range(4,9)) \
             + list(range(10,72))
-            
+
 test_case_9 = list(range(-2**20, 2**20  ))
