@@ -1,4 +1,4 @@
-"""Your algorithms timing can be tested here.
+"""Your algorithms' timing can be tested here.
 Use _timing_wrapper() function to create a timed instance of your function
 and use numbered test cases as input."""
 
