@@ -6,7 +6,5 @@ for i in range(1,len(a)+1):
         print(i)
         break
 
-b=(n**2 for n in range(12))
-
 #Solution 2
 next(i for i in range(1,len(a)+1) if i not in a)
