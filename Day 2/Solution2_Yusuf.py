@@ -1,6 +1,7 @@
 #Solution 1
 a = [3,2,1]
 outcome = []
+result = []
 for i in range(len(a)):
     b=a.copy()
     r = 1
@@ -8,9 +9,9 @@ for i in range(len(a)):
     for j in b:
         r*=j
     outcome.append(result)
-    
-    
-    
+
+
+
 #Solution 2
 a = [3, 2, 1]
 e =0

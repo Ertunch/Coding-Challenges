@@ -1,0 +1,9 @@
+test_case_1 = 'GOOGLE'
+test_case_2 = 'AMAZON'
+test_case_3 = 'HAWKSANDBROTHERINCLLC'
+test_case_4 = 'ANDREWSSEMICONDUCTORINC'
+test_case_5 = 'SES'  # Violating question constraints
+test_case_6 = 'GOOGLEE'*40
+test_case_7 = 'GOOGLEE' * 4000
+test_case_8 = 'GOOGLEE' * 40000
+test_case_9 = 'ABC' * 400000 + 'AAABBCC'
