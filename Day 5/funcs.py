@@ -29,7 +29,7 @@ def decode(message):
     possibilities = {i:[i+b for b in possibilities[i]] for i in possibilities}
     finish = {len(message) - 1:1}
     for i in reversed(list(possibilities.keys())):
-        finish[i] = sum([finish[j] for j in possibilities[i]])
+        finish[i] = sum([finish[j] for j in possibilities[i]])  # Counting leaf nodes, starting from the bottom
 
     # possible_decodings = tree.count(len(message)-1)  # Subtracting 1 for dummy char 'q'
     possible_decodings = finish[0]
