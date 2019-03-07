@@ -1,52 +1,52 @@
 
-def func1(a):
+def func1(array):
     outcome = []
     result = []
-    for i in range(len(a)):
-        b=a.copy()
-        r = 1
-        del b[i]
-        for j in b:
-            r*=j
+    for i in range(len(array)):
+        ret = array.copy()
+        intermediate = 1
+        del ret[i]
+        for j in ret:
+            intermediate *= j
         outcome.append(result)
     return outcome
 
-def func2(a):
-    e =0
-    b = []
-    r=1
-    while e < len(a):
-        for i,j in enumerate(a):
-            if i != e:
-                r*=j
-        b.append(r)
-        r = 1
-        e+=1
-    return b
+def func2(array):
+    ind = 0
+    ret = []
+    intermediate = 1
+    while ind < len(array):
+        for i, j in enumerate(array):
+            if i != ind:
+                intermediate *= j
+        ret.append(intermediate)
+        intermediate = 1
+        ind += 1
+    return ret
 
-def func3(a):
+def func3(array):
     i = 0
-    left = [0] * len(a)
-    while i < len(a):
+    left = [0] * len(array)
+    while i < len(array):
         if i == 0:
-            left[i] = a[i]
+            left[i] = array[i]
         else:
-            left[i] = left[i-1] * a[i]
+            left[i] = left[i-1] * array[i]
         i += 1
-    right = [0] * len(a)
+    right = [0] * len(array)
     i -= 1
     while i >= 0:
-        if i == len(a) - 1:
-            right[i] = a[i]
+        if i == len(array) - 1:
+            right[i] = array[i]
         else:
-            right[i] = right[i+1] * a[i]
+            right[i] = right[i+1] * array[i]
         i -= 1
-    products = [0] * len(a)
+    products = [0] * len(array)
     i = 0
-    while i < len(a):
+    while i < len(array):
         if i == 0:
             products[i] = right[i+1]
-        elif i == len(a) - 1:
+        elif i == len(array) - 1:
             products[i] = left[i-1]
         else:
             products[i] = left[i-1] * right[i+1]
